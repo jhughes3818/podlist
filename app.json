@@ -11,6 +11,15 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "scheme": "exp://192.168.1.103:19000/--/auth/callback",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -25,6 +34,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "63127da9-42ec-4e57-99b0-9c4f8d660570"
+      }
+    },
+    "owner": "by_json"
   }
 }
